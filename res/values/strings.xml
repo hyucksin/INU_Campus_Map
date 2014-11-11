@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">INUCampusMap</string>
+    <string name="MenuButton1">건물선택</string>
+    <string name="MenuButton2">캠퍼스지도</string>
+    <string name="MenuButton3">별그대강의실</string>
+    <string name="MenuButton4">이용정보</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
