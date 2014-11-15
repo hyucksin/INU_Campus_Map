@@ -9,42 +9,30 @@
     tools:context="com.example.inucampusmap.MainActivity" >
 
     <Button
-        android:id="@+id/buildingButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="115dp"
-        android:layout_marginTop="42dp"
-        android:onClick="onClick"
-        android:text="@string/buildingButton" />
-
-    <Button
-        android:id="@+id/useButton"
+        android:id="@+id/b1Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/mapButton"
-        android:layout_marginBottom="121dp"
-        android:onClick="onClick"
-        android:text="@string/useButton" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="115dp"
+        android:text="@string/b1Button" />
 
     <Button
-        android:id="@+id/starButton"
+        android:id="@+id/f1Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b1Button"
+        android:layout_alignBottom="@+id/b1Button"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:onClick="onClick"
-        android:text="@string/starButton" />
+        android:text="@string/f1Button" />
 
     <Button
-        android:id="@+id/mapButton"
+        android:id="@+id/locationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/starButton"
+        android:layout_below="@+id/f1Button"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="37dp"
-        android:onClick="onClick"
-        android:text="@string/mapButton" />
+        android:layout_marginTop="26dp"
+        android:text="@string/locationButton" />
 
 </RelativeLayout>

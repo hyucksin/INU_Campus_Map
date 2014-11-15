@@ -2,10 +2,13 @@
 <resources>
 
     <string name="app_name">INUCampusMap</string>
-    <string name="MenuButton1">건물선택</string>
-    <string name="MenuButton2">캠퍼스지도</string>
-    <string name="MenuButton3">별그대강의실</string>
-    <string name="MenuButton4">이용정보</string>
+    <string name="buildingButton">건물선택</string>
+    <string name="mapButton">캠퍼스지도</string>
+    <string name="starButton">별그대강의실</string>
+    <string name="useButton">이용정보</string>
+    <string name="b1Button">지하1층</string>
+    <string name="f1Button">1층</string>
+    <string name="locationButton">위치</string>
     <string name="action_settings">Settings</string>
 
 </resources>
