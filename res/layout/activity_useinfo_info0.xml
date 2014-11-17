@@ -9,28 +9,28 @@
     tools:context="com.example.inucampusmap.MainActivity" >
 
     <Button
-        android:id="@+id/b1Button"
+        android:id="@+id/f1Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="115dp"
-        android:text="@string/b1Button" />
+        android:text="@string/f1Button" />
 
     <Button
-        android:id="@+id/f1Button"
+        android:id="@+id/f2Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/b1Button"
-        android:layout_alignBottom="@+id/b1Button"
+        android:layout_alignBaseline="@+id/f1Button"
+        android:layout_alignBottom="@+id/f1Button"
         android:layout_centerHorizontal="true"
-        android:text="@string/f1Button" />
+        android:text="@string/f2Button" />
 
     <Button
         android:id="@+id/locationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/f1Button"
+        android:layout_below="@+id/f2Button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:text="@string/locationButton" />

@@ -3,11 +3,12 @@
 
     <string name="app_name">INUCampusMap</string>
     <string name="buildingButton">건물선택</string>
+    <string name="buildingImageView">건물이미지뷰</string>
     <string name="mapButton">캠퍼스지도</string>
     <string name="starButton">별그대강의실</string>
     <string name="useButton">이용정보</string>
-    <string name="b1Button">지하1층</string>
     <string name="f1Button">1층</string>
+    <string name="f2Button">2층</string>
     <string name="locationButton">위치</string>
     <string name="action_settings">Settings</string>
 
