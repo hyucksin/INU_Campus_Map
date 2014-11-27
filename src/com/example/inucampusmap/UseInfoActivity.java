@@ -69,9 +69,9 @@ public class UseInfoActivity extends Activity {
 				new AdapterView.OnItemClickListener() {
 					public void onItemClick(AdapterView parent, View view, int position, long id){
 						//선택한 이용정보의 액티비티 이동
-						UseInfoActivityImage a = new UseInfoActivityImage();
+						UseInfoActivity0 a = new UseInfoActivity0();
 						a.infoNumber = position;
-						startActivity(new Intent(UseInfoActivity.this,UseInfoActivityImage.class));
+						startActivity(new Intent(UseInfoActivity.this,UseInfoActivity0.class));
 					}
 				};
 		mListMember.setOnItemClickListener(mItemClickListener);

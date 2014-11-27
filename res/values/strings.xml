@@ -7,6 +7,8 @@
     <string name="mapButton">캠퍼스지도</string>
     <string name="starButton">별그대강의실</string>
     <string name="useButton">이용정보</string>
+    <string name="useInfoImageView">정보이미지뷰</string>
+    <string name="useInfoMapImage">맵이미지뷰</string>
     <string name="f1Button">1층</string>
     <string name="f2Button">2층</string>
     <string name="locationButton">위치</string>

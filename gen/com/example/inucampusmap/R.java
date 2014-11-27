@@ -405,20 +405,74 @@ containing a value of this type.
         public static final int common_signin_btn_text_normal_light=0x7f02001c;
         public static final int common_signin_btn_text_pressed_dark=0x7f02001d;
         public static final int common_signin_btn_text_pressed_light=0x7f02001e;
-        public static final int ic_launcher=0x7f02001f;
-        public static final int ic_plusone_medium_off_client=0x7f020020;
-        public static final int ic_plusone_small_off_client=0x7f020021;
-        public static final int ic_plusone_standard_off_client=0x7f020022;
-        public static final int ic_plusone_tall_off_client=0x7f020023;
-        public static final int powered_by_google_dark=0x7f020024;
-        public static final int powered_by_google_light=0x7f020025;
-        public static final int rlatngus=0x7f020026;
-        public static final int rlatngus1=0x7f020027;
-        public static final int wjswlgus=0x7f020028;
-        public static final int wjswlgus1=0x7f020029;
+        public static final int i0=0x7f02001f;
+        public static final int i1=0x7f020020;
+        public static final int i10=0x7f020021;
+        public static final int i11=0x7f020022;
+        public static final int i12=0x7f020023;
+        public static final int i13=0x7f020024;
+        public static final int i14=0x7f020025;
+        public static final int i15=0x7f020026;
+        public static final int i16=0x7f020027;
+        public static final int i17=0x7f020028;
+        public static final int i18=0x7f020029;
+        public static final int i19=0x7f02002a;
+        public static final int i2=0x7f02002b;
+        public static final int i20=0x7f02002c;
+        public static final int i21=0x7f02002d;
+        public static final int i22=0x7f02002e;
+        public static final int i23=0x7f02002f;
+        public static final int i24=0x7f020030;
+        public static final int i25=0x7f020031;
+        public static final int i26=0x7f020032;
+        public static final int i3=0x7f020033;
+        public static final int i4=0x7f020034;
+        public static final int i5=0x7f020035;
+        public static final int i6=0x7f020036;
+        public static final int i7=0x7f020037;
+        public static final int i8=0x7f020038;
+        public static final int i9=0x7f020039;
+        public static final int ic_launcher=0x7f02003a;
+        public static final int ic_plusone_medium_off_client=0x7f02003b;
+        public static final int ic_plusone_small_off_client=0x7f02003c;
+        public static final int ic_plusone_standard_off_client=0x7f02003d;
+        public static final int ic_plusone_tall_off_client=0x7f02003e;
+        public static final int im0=0x7f02003f;
+        public static final int im1=0x7f020040;
+        public static final int im10=0x7f020041;
+        public static final int im11=0x7f020042;
+        public static final int im12=0x7f020043;
+        public static final int im13=0x7f020044;
+        public static final int im14=0x7f020045;
+        public static final int im15=0x7f020046;
+        public static final int im16=0x7f020047;
+        public static final int im17=0x7f020048;
+        public static final int im18=0x7f020049;
+        public static final int im19=0x7f02004a;
+        public static final int im2=0x7f02004b;
+        public static final int im20=0x7f02004c;
+        public static final int im21=0x7f02004d;
+        public static final int im22=0x7f02004e;
+        public static final int im23=0x7f02004f;
+        public static final int im24=0x7f020050;
+        public static final int im25=0x7f020051;
+        public static final int im26=0x7f020052;
+        public static final int im3=0x7f020053;
+        public static final int im4=0x7f020054;
+        public static final int im5=0x7f020055;
+        public static final int im6=0x7f020056;
+        public static final int im7=0x7f020057;
+        public static final int im8=0x7f020058;
+        public static final int im9=0x7f020059;
+        public static final int powered_by_google_dark=0x7f02005a;
+        public static final int powered_by_google_light=0x7f02005b;
+        public static final int rlatngus=0x7f02005c;
+        public static final int rlatngus1=0x7f02005d;
+        public static final int wjswlgus=0x7f02005e;
+        public static final int wjswlgus1=0x7f02005f;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0021;
+        public static final int action_settings=0x7f0a0023;
         public static final int book_now=0x7f0a000e;
         public static final int buildingButton=0x7f0a0019;
         public static final int buildingImageView=0x7f0a0015;
@@ -450,7 +504,9 @@ containing a value of this type.
         public static final int strict_sandbox=0x7f0a0009;
         public static final int terrain=0x7f0a0004;
         public static final int useButton=0x7f0a001a;
+        public static final int useInfoImageView=0x7f0a0021;
         public static final int useInfoList=0x7f0a0020;
+        public static final int useInfoMapImage=0x7f0a0022;
         public static final int wrap_content=0x7f0a000d;
     }
     public static final class integer {
@@ -470,7 +526,7 @@ containing a value of this type.
     }
     public static final class string {
         public static final int accept=0x7f050002;
-        public static final int action_settings=0x7f05002c;
+        public static final int action_settings=0x7f05002e;
         public static final int app_name=0x7f050023;
         public static final int buildingButton=0x7f050024;
         public static final int buildingImageView=0x7f050025;
@@ -576,14 +632,16 @@ containing a value of this type.
         public static final int create_calendar_message=0x7f050005;
         public static final int create_calendar_title=0x7f050004;
         public static final int decline=0x7f050003;
-        public static final int f1Button=0x7f050029;
-        public static final int f2Button=0x7f05002a;
-        public static final int locationButton=0x7f05002b;
+        public static final int f1Button=0x7f05002b;
+        public static final int f2Button=0x7f05002c;
+        public static final int locationButton=0x7f05002d;
         public static final int mapButton=0x7f050026;
         public static final int starButton=0x7f050027;
         public static final int store_picture_message=0x7f050001;
         public static final int store_picture_title=0x7f050000;
         public static final int useButton=0x7f050028;
+        public static final int useInfoImageView=0x7f050029;
+        public static final int useInfoMapImage=0x7f05002a;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */

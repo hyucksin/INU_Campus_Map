@@ -63,6 +63,8 @@
         <activity
             android:name=".UseInfoActivity"></activity>
         <activity
+            android:name=".UseInfoActivityImage"></activity>
+        <activity
             android:name=".UseInfoActivity0"></activity>
     </application>
 
