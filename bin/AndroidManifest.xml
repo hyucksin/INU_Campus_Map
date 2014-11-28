@@ -23,9 +23,15 @@
    
 
 
+<<<<<<< HEAD
 
 	
 
+=======
+
+	
+
+>>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
 	 
     <application
         android:allowBackup="true"
@@ -62,6 +68,8 @@
         
         <activity
             android:name=".UseInfoActivity"></activity>
+        <activity
+            android:name=".UseInfoActivityImage"></activity>
         <activity
             android:name=".UseInfoActivity0"></activity>
     </application>

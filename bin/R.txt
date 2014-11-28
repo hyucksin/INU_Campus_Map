@@ -57,8 +57,13 @@ int color wallet_holo_blue_light 0x7f060015
 int color wallet_link_text_light 0x7f060016
 int color wallet_primary_text_holo_light 0x7f060019
 int color wallet_secondary_text_holo_dark 0x7f06001a
+<<<<<<< HEAD
 int dimen activity_horizontal_margin 0x7f090000
 int dimen activity_vertical_margin 0x7f090001
+=======
+int dimen activity_horizontal_margin 0x7f080000
+int dimen activity_vertical_margin 0x7f080001
+>>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
 int drawable b7_1 0x7f020000
 int drawable b7_2 0x7f020001
 int drawable b7_3 0x7f020002
@@ -90,6 +95,7 @@ int drawable common_signin_btn_text_normal_dark 0x7f02001b
 int drawable common_signin_btn_text_normal_light 0x7f02001c
 int drawable common_signin_btn_text_pressed_dark 0x7f02001d
 int drawable common_signin_btn_text_pressed_light 0x7f02001e
+<<<<<<< HEAD
 int drawable ic_launcher 0x7f02001f
 int drawable ic_plusone_medium_off_client 0x7f020020
 int drawable ic_plusone_small_off_client 0x7f020021
@@ -134,6 +140,110 @@ int id useButton 0x7f07001a
 int id useInfoList 0x7f07001e
 int id wrap_content 0x7f07000d
 int integer google_play_services_version 0x7f080000
+=======
+int drawable i0 0x7f02001f
+int drawable i1 0x7f020020
+int drawable i10 0x7f020021
+int drawable i11 0x7f020022
+int drawable i12 0x7f020023
+int drawable i13 0x7f020024
+int drawable i14 0x7f020025
+int drawable i15 0x7f020026
+int drawable i16 0x7f020027
+int drawable i17 0x7f020028
+int drawable i18 0x7f020029
+int drawable i19 0x7f02002a
+int drawable i2 0x7f02002b
+int drawable i20 0x7f02002c
+int drawable i21 0x7f02002d
+int drawable i22 0x7f02002e
+int drawable i23 0x7f02002f
+int drawable i24 0x7f020030
+int drawable i25 0x7f020031
+int drawable i26 0x7f020032
+int drawable i3 0x7f020033
+int drawable i4 0x7f020034
+int drawable i5 0x7f020035
+int drawable i6 0x7f020036
+int drawable i7 0x7f020037
+int drawable i8 0x7f020038
+int drawable i9 0x7f020039
+int drawable ic_launcher 0x7f02003a
+int drawable ic_plusone_medium_off_client 0x7f02003b
+int drawable ic_plusone_small_off_client 0x7f02003c
+int drawable ic_plusone_standard_off_client 0x7f02003d
+int drawable ic_plusone_tall_off_client 0x7f02003e
+int drawable im0 0x7f02003f
+int drawable im1 0x7f020040
+int drawable im10 0x7f020041
+int drawable im11 0x7f020042
+int drawable im12 0x7f020043
+int drawable im13 0x7f020044
+int drawable im14 0x7f020045
+int drawable im15 0x7f020046
+int drawable im16 0x7f020047
+int drawable im17 0x7f020048
+int drawable im18 0x7f020049
+int drawable im19 0x7f02004a
+int drawable im2 0x7f02004b
+int drawable im20 0x7f02004c
+int drawable im21 0x7f02004d
+int drawable im22 0x7f02004e
+int drawable im23 0x7f02004f
+int drawable im24 0x7f020050
+int drawable im25 0x7f020051
+int drawable im26 0x7f020052
+int drawable im3 0x7f020053
+int drawable im4 0x7f020054
+int drawable im5 0x7f020055
+int drawable im6 0x7f020056
+int drawable im7 0x7f020057
+int drawable im8 0x7f020058
+int drawable im9 0x7f020059
+int drawable powered_by_google_dark 0x7f02005a
+int drawable powered_by_google_light 0x7f02005b
+int drawable rlatngus 0x7f02005c
+int drawable rlatngus1 0x7f02005d
+int drawable wjswlgus 0x7f02005e
+int drawable wjswlgus1 0x7f02005f
+int id action_settings 0x7f0a0023
+int id book_now 0x7f0a000e
+int id buildingButton 0x7f0a0019
+int id buildingImageView 0x7f0a0015
+int id buildingList 0x7f0a0014
+int id buyButton 0x7f0a000a
+int id buy_now 0x7f0a000f
+int id buy_with_google 0x7f0a0010
+int id classic 0x7f0a0011
+int id f1Button 0x7f0a0016
+int id f2Button 0x7f0a0017
+int id grayscale 0x7f0a0012
+int id holo_dark 0x7f0a0005
+int id holo_light 0x7f0a0006
+int id hybrid 0x7f0a0000
+int id locationButton 0x7f0a0018
+int id mapButton 0x7f0a001b
+int id match_parent 0x7f0a000c
+int id monochrome 0x7f0a0013
+int id none 0x7f0a0001
+int id normal 0x7f0a0002
+int id production 0x7f0a0007
+int id sandbox 0x7f0a0008
+int id satellite 0x7f0a0003
+int id selectionDetails 0x7f0a000b
+int id starButton 0x7f0a001c
+int id star_map 0x7f0a001d
+int id star_map_dialog_iv 0x7f0a001f
+int id star_map_dialog_tv 0x7f0a001e
+int id strict_sandbox 0x7f0a0009
+int id terrain 0x7f0a0004
+int id useButton 0x7f0a001a
+int id useInfoImageView 0x7f0a0021
+int id useInfoList 0x7f0a0020
+int id useInfoMapImage 0x7f0a0022
+int id wrap_content 0x7f0a000d
+int integer google_play_services_version 0x7f070000
+>>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
 int layout activity_building 0x7f030000
 int layout activity_building_info0 0x7f030001
 int layout activity_campus_map 0x7f030002
@@ -141,9 +251,15 @@ int layout activity_main 0x7f030003
 int layout activity_star_map 0x7f030004
 int layout activity_useinfo 0x7f030005
 int layout activity_useinfo_info0 0x7f030006
+<<<<<<< HEAD
 int menu main 0x7f0a0000
 int string accept 0x7f050002
 int string action_settings 0x7f05002c
+=======
+int menu main 0x7f090000
+int string accept 0x7f050002
+int string action_settings 0x7f05002e
+>>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
 int string app_name 0x7f050023
 int string buildingButton 0x7f050024
 int string buildingImageView 0x7f050025
@@ -178,14 +294,25 @@ int string common_signin_button_text_long 0x7f050020
 int string create_calendar_message 0x7f050005
 int string create_calendar_title 0x7f050004
 int string decline 0x7f050003
+<<<<<<< HEAD
 int string f1Button 0x7f050029
 int string f2Button 0x7f05002a
 int string locationButton 0x7f05002b
+=======
+int string f1Button 0x7f05002b
+int string f2Button 0x7f05002c
+int string locationButton 0x7f05002d
+>>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
 int string mapButton 0x7f050026
 int string starButton 0x7f050027
 int string store_picture_message 0x7f050001
 int string store_picture_title 0x7f050000
 int string useButton 0x7f050028
+<<<<<<< HEAD
+=======
+int string useInfoImageView 0x7f050029
+int string useInfoMapImage 0x7f05002a
+>>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
 int string wallet_buy_button_place_holder 0x7f050022
 int style AppBaseTheme 0x7f040005
 int style AppTheme 0x7f040006
