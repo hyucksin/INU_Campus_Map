@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.inucampusmap"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -18,20 +19,6 @@
         android:glEsVersion="0x00020000" 
         android:required="true"/>
     
-   
-    
-   
-
-
-<<<<<<< HEAD
-
-	
-
-=======
-
-	
-
->>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
 	 
     <application
         android:allowBackup="true"

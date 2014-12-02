@@ -1,27 +1,6 @@
 package com.example.inucampusmap;
 
-<<<<<<< HEAD
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.os.Bundle;
-
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
-import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
-
-
-
-public class StarActivity extends Activity {
-=======
 import java.util.ArrayList;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -42,70 +21,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-/*public class StarActivity extends Activity {
-
-private GoogleMap mMap;
-//private GoogleMap mMap2;
-//private GoogleMap mMap3;
-//private GoogleMap inMap; //ì¼ë‹¨
- LatLng loc = new LatLng(37.37556, 126.63279); // ìœ„ì¹˜ ì¢Œí‘œ ì„¤ì • 
- CameraPosition cp = new CameraPosition.Builder().target((loc)).zoom(16).build();  
- MarkerOptions marker = new MarkerOptions().position(loc); // êµ¬ê¸€ë§µì— ê¸°ë³¸ë§ˆì»¤ í‘œì‹œ  
-// AlertDialog.Builder alter2=new AlertDialog.Builder(this);
- 
- @Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    
-    setContentView(R.layout.activity_star_map);
-    //ë°©ë²•22
-    mMap=((MapFragment)getFragmentManager().findFragmentById(R.id.star_map)).getMap();
-    mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));
-   
-    mMap.setOnMapClickListener((OnMapClickListener) this);
-    
-    MarkerOptions m1 = new MarkerOptions(); 
-	m1.position(new LatLng(37.37449,126.63349));// ìœ„ë„ â€¢ ê²½ë„ 
-	m1.title("63ë¹Œë”©"); // ì œëª© ë¯¸ë¦¬ë³´ê¸° 
-    m1.snippet("ì´ê³³ì€ 63ë¹Œë”©ìž…ë‹ˆë‹¤."); 
-    mMap.addMarker(m1).showInfoWindow(); 
-    
-    //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.classroom1)).position(new LatLng(37.37449,126.63349)));
-   // mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.rlatngus1)).position(new LatLng(37.37478,126.63442)));
-    //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.wjswlgus1)).position(new LatLng(37.37426,126.63071)));
-            
-    mMap.setOnMarkerClickListener(new OnMarkerClickListener() {
-    	 
-        public boolean onMarkerClick(Marker marker) {
-            String text = "[ë§ˆì»¤ í´ë¦­ ì´ë²¤íŠ¸] latitude ="
-                                + marker.getPosition().latitude + ", longitude ="
-                    + marker.getPosition().longitude;
-            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG)
-                    .show();
-            return false;
-        }
-    });
- 
-    // í´ë¦­ì´ë²¤íŠ¸
-    mMap.setOnMapClickListener(new OnMapClickListener() {
- 
-        public void onMapClick(LatLng point) {
-            String text = "[ë‹¨ì‹œê°„ í´ë¦­ì‹œ ì´ë²¤íŠ¸] latitude ="
-                                + point.latitude + ", longitude ="
-                    + point.longitude;
-            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG)
-                    .show();
-        }
-    });
-
-
-
-}
-}*/
-
-
-
-
 public class StarActivity extends Activity
 {
     private GoogleMap mMap;
@@ -119,36 +34,22 @@ public class StarActivity extends Activity
         
 	 LatLng loc = new LatLng(37.37556, 126.63279); // ìœ„ì¹˜ ì¢Œí‘œ ì„¤ì • 
 	 CameraPosition cp = new CameraPosition.Builder().target((loc)).zoom(16).build();       
-  /* public void onBackPressed() {
-        // TODO Auto-generated method stub
-        super.onBackPressed();
-        Intro.gubunView = 1;
-        Intent i = new Intent(getApplicationContext(), Tab.class);
-        startActivity(i);
-        finish();
-    }*/
+  
     
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //requestWindowFeature(Window.FEATURE_NO_TITLE); // íƒ€ì´í‹€ë°” ì—†ì• ê¸°
-        //setContentView(R.layout.StarActivity); //try to do it.
+        
         setContentView(R.layout.activity_star_map);
-        //TextView tv = (TextView) findViewById(R.id.intro_campus_textview);
-        //tv.setText("ë³„ê·¸ëŒ€ ì´¬ì˜ìž¥ ì§€ë„");
+        
        
         mContext = StarActivity.this;
         
         //ì´ë¶€ë¶„ ë‚´ê»„ë¡œ ë§žì¶°ì„œ focusê¹Œì§€         
         mMap=((MapFragment)getFragmentManager().findFragmentById(R.id.star_map)).getMap();
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));
-        //gmap = ((SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
-        //LatLng loc = new LatLng(ìœ„ë„, ê²½ë„);
-
-        //CameraPosition cp = new CameraPosition.Builder().target((loc)).zoom(17).build();
-        //gmap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));
-
+        
         map_info_list = new ArrayList<MapBean>();
         
         map_info_list.add(new MapBean("37.37449,126.63349","ì´¬ì˜ìž¥ 1",(R.drawable.classroom1)));
@@ -186,194 +87,13 @@ public class StarActivity extends Activity
                     					dialog.dismiss();
                     				}
                     			}).show();
-                    	
-                       
-                        
                     }
-                    
+              
                 }
 				return false;
-                
-                //ì´ë¶€ë¶„ì´ ë­”ì§€ ëª¨ë¥´ê² ë‹¤.//
-               // v = View.inflate(mContext, R.layout.activity_star_map, null);
-               // ctv = (TextView)v.findViewById(R.id.star_map_dialog_tv); //ë‚´ìš©
-               // civ = (ImageView)v.findViewById(R.id.star_map_dialog_iv); // ì‚¬ì§„
-               // if(img != 0)
-                 //   civ.setImageResource(img);
-
-                // ì»¤ìŠ¤í…€ ë‹¤ì´ì–¼ë¡œê·¸ë¥¼ ë„ìš°ì„¸ìš”.
-                //AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-                
-               // builder.setNeutralButton("ë‹«ê¸°", null);
-              //  builder.setTitle(dialogtitle);
-               // builder.setView(v);
-               // builder.show();
-               // return false;
             }
         });
         
     }
         
 }
-
- 
-
- 
-
-
-
-
-
-//map markerìƒì„±í•´ì£¼ëŠ” ê°ì²´ 
-// TODO Auto-generated method stub
-/** Called when the activity is first created. */
-// íƒ€ì´í‹€ë°” ì—†ì• ê¸°
-//ê° ë§ˆì»¤ì—ëŒ€í•´ì„œ ê²½ë„,ìœ„ë„ê°€ ê°™ì€ì§€ì— ëŒ€í•´ì„œ ì•Œì•„ë³´ê³  ë§ˆì»¤ ì ìš©
-// ë‚´ìš©
-// ì‚¬ì§„
-// ì»¤ìŠ¤í…€ ë‹¤ì´ì–¼ë¡œê·¸ë¥¼ ë„ìš°ì„¸ìš”.
-/*public class StarActivity extends Activity {
->>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
-	
-	private GoogleMap mMap;
-	//private GoogleMap mMap2;
-	//private GoogleMap mMap3;
-<<<<<<< HEAD
-	//private GoogleMap inMap; //ÀÏ´Ü
-	 LatLng loc = new LatLng(37.37556, 126.63279); // À§Ä¡ ÁÂÇ¥ ¼³Á¤ 
-	 CameraPosition cp = new CameraPosition.Builder().target((loc)).zoom(16).build();  
-	 MarkerOptions marker = new MarkerOptions().position(loc); // ±¸±Û¸Ê¿¡ ±âº»¸¶Ä¿ Ç¥½Ã  
-=======
-	//private GoogleMap inMap; //ì¼ë‹¨
-	 LatLng loc = new LatLng(37.37556, 126.63279); // ìœ„ì¹˜ ì¢Œí‘œ ì„¤ì • 
-	 CameraPosition cp = new CameraPosition.Builder().target((loc)).zoom(16).build();  
-	 MarkerOptions marker = new MarkerOptions().position(loc); // êµ¬ê¸€ë§µì— ê¸°ë³¸ë§ˆì»¤ í‘œì‹œ  
->>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
-	// AlertDialog.Builder alter2=new AlertDialog.Builder(this);
-	 
-	 @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        
-        setContentView(R.layout.activity_star_map);
-<<<<<<< HEAD
-        //¹æ¹ý2
-
-        
-        //¹æ¹ý1
-=======
-        //ë°©ë²•22
-
-        
-        //ë°©ë²•1
->>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
-        mMap=((MapFragment)getFragmentManager().findFragmentById(R.id.star_map)).getMap();
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));
-        mMap.addMarker(marker);
-        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.classroom1)).position(new LatLng(37.37449,126.63349)));
-        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.rlatngus1)).position(new LatLng(37.37478,126.63442)));
-        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.wjswlgus1)).position(new LatLng(37.37426,126.63071)));
-                
-<<<<<<< HEAD
-
-=======
-        mMap.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
-        	 
-            public void onInfoWindowClick(Marker arg0) {
-                AlertDialog alert2 = new AlertDialog.Builder(StarActivity.this)
-                        .setTitle("ë“±ì´Œì¹¼êµ­ìˆ˜")
-                        .setMessage("ì£¼ì†Œ:ë³µì •ë™ 694-1 tel:031-752-3414")
-                        .setPositiveButton("OK",
-                                new DialogInterface.OnClickListener() {
- 
-                                    @Override
-                                    public void onClick(DialogInterface dialog,
-                                            int which) {
-                                        dialog.dismiss();
-                                    }
-                                }).show();
-            };
-        });
->>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
-
- 
-    }
-   
-<<<<<<< HEAD
-}
-//map marker»ý¼ºÇØÁÖ´Â °´Ã¼ 
-// TODO Auto-generated method stub
-/** Called when the activity is first created. */
-// Å¸ÀÌÆ²¹Ù ¾ø¾Ö±â
-//°¢ ¸¶Ä¿¿¡´ëÇØ¼­ °æµµ,À§µµ°¡ °°ÀºÁö¿¡ ´ëÇØ¼­ ¾Ë¾Æº¸°í ¸¶Ä¿ Àû¿ë
-// ³»¿ë
-// »çÁø
-// Ä¿½ºÅÒ ´ÙÀÌ¾ó·Î±×¸¦ ¶ç¿ì¼¼¿ä.
-/*public class StarActivity extends Activity {
-	
-	private GoogleMap mMap;
-	//private GoogleMap mMap2;
-	//private GoogleMap mMap3;
-	//private GoogleMap inMap; //ÀÏ´Ü
-	 LatLng loc = new LatLng(37.37556, 126.63279); // À§Ä¡ ÁÂÇ¥ ¼³Á¤ 
-	 CameraPosition cp = new CameraPosition.Builder().target((loc)).zoom(16).build();  
-	 MarkerOptions marker = new MarkerOptions().position(loc); // ±¸±Û¸Ê¿¡ ±âº»¸¶Ä¿ Ç¥½Ã  
-	// AlertDialog.Builder alter2=new AlertDialog.Builder(this);
-	 
-	 @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        
-        setContentView(R.layout.activity_star_map);
-        //¹æ¹ý22
-
-        
-        //¹æ¹ý1
-        mMap=((MapFragment)getFragmentManager().findFragmentById(R.id.star_map)).getMap();
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));
-        mMap.addMarker(marker);
-        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.classroom1)).position(new LatLng(37.37449,126.63349)));
-        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.rlatngus1)).position(new LatLng(37.37478,126.63442)));
-        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.wjswlgus1)).position(new LatLng(37.37426,126.63071)));
-                
-        mMap.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
-        	 
-            public void onInfoWindowClick(Marker arg0) {
-                AlertDialog alert2 = new AlertDialog.Builder(StarActivity.this)
-                        .setTitle("µîÃÌÄ®±¹¼ö")
-                        .setMessage("ÁÖ¼Ò:º¹Á¤µ¿ 694-1 tel:031-752-3414")
-                        .setPositiveButton("OK",
-                                new DialogInterface.OnClickListener() {
- 
-                                    @Override
-                                    public void onClick(DialogInterface dialog,
-                                            int which) {
-                                        dialog.dismiss();
-                                    }
-                                }).show();
-            };
-        });
-
- 
-    }
-   
-=======
->>>>>>> 45d4489fbb3f2a69349c9c99668eca4a426a2da5
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
