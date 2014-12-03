@@ -9,9 +9,11 @@
     <string name="useButton">이용정보</string>
     <string name="useInfoImageView">정보이미지뷰</string>
     <string name="useInfoMapImage">맵이미지뷰</string>
-    <string name="f1Button">1층</string>
-    <string name="f2Button">2층</string>
-    <string name="locationButton">위치</string>
+    <string name="floorMapButton">층별 구조도 보기</string>
+    <string name="floorRoomButton">층별 방 목록 보기</string>
+    <string name="textRoomList">층별 방 목록 텍스트</string>
+    <string name="f3Button">3층</string>
+    <string name="locationButton">건물의 위치</string>
     <string name="action_settings">Settings</string>
 
 </resources>
