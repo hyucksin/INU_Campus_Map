@@ -87,9 +87,9 @@ public class UseInfoActivity0 extends Activity{
 	        	//map_info_list.add(new UseInfoData("37.37372,126.63265","공과대학 매점",(R.drawable.i0)));
 	        	mImageView.setImageResource(map_info_list.get(0).getPlace_img());
 				mMap=((MapFragment)getFragmentManager().findFragmentById(R.id.campus_mapshow)).getMap();
-				mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp)); 				
-	        	marker = mMap.addMarker(new MarkerOptions().position(map_info_list.get(0).getPlace_location()));
-	        	startActivity(new Intent(UseInfoActivity0.this,ShowLocation.class));
+				//mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp)); 				
+	        	//marker = mMap.addMarker(new MarkerOptions().position(map_info_list.get(0).getPlace_location()));
+	        	//startActivity(new Intent(UseInfoActivity0.this,ShowLocation.class));
 			case 1 :
 				//bitmap = (BitmapDrawable)res.getDrawable(R.drawable.i1);
 				//bitmap2 = (BitmapDrawable)res.getDrawable(R.drawable.im1);break;

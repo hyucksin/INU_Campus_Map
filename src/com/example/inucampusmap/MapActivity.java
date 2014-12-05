@@ -72,7 +72,7 @@ public class MapActivity extends Activity {
 							("상세정보", new OnClickListener(){
 								public void onClick(DialogInterface dialog,int which)
 								{
-									Intent intent=new Intent(MapActivity.this,MainActivity.class);
+									Intent intent=new Intent(MapActivity.this,BuildingInfoActivity0.class);
 									startActivity(intent);
 								}
 							}).show();
@@ -85,7 +85,7 @@ public class MapActivity extends Activity {
 							("상세정보", new OnClickListener(){
 								public void onClick(DialogInterface dialog,int which)
 								{
-									Intent intent=new Intent(MapActivity.this,MainActivity.class);
+									Intent intent=new Intent(MapActivity.this,BuildingInfoActivity1.class);
 									startActivity(intent);
 								}
 							}).show();
