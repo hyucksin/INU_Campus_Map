@@ -54,12 +54,13 @@ public class BuildingInfoActivity0 extends Activity{
 	final int R_THREE = 7;
 	final int R_FOUR = 8;
 	final int R_FIVE = 9;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_building_info0);
-
+		
 		mImageView = (ImageView)findViewById(R.id.buildingImageView);
 		textView = (TextView)findViewById(R.id.textRoomList);
 
@@ -83,6 +84,7 @@ public class BuildingInfoActivity0 extends Activity{
         	bitmap = Bitmap.createScaledBitmap(bitmap, 450, 600, true);
         	mImageView.setImageBitmap(bitmap);
             mImageView.setScaleType(ImageView.ScaleType.FIT_START);*/
+		
 			setContentView(R.layout.activity_building_mapshow);
 			mMap=((MapFragment)getFragmentManager().findFragmentById(R.id.campus_mapshow)).getMap();
 			mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));   

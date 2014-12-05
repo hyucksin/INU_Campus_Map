@@ -9,28 +9,30 @@
         android:background="@color/bg"
         android:orientation="horizontal" >
 
-
-
         <Button
             android:id="@+id/locationButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/btbg"
             android:onClick="onClick"
             android:text="@string/locationButton" />
 
         <Button
             android:id="@+id/floorMapButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="124dp"
+            android:layout_height="82dp"
+            android:background="@color/btbg"
             android:onClick="onClick"
             android:text="@string/floorMapButton" />
 
         <Button
             android:id="@+id/floorRoomButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="@color/btbg"
             android:onClick="onClick"
             android:text="@string/floorRoomButton" />
+
     </LinearLayout>
 
     <FrameLayout

@@ -15,5 +15,6 @@
     <string name="f3Button">3층</string>
     <string name="locationButton">건물의 위치</string>
     <string name="action_settings">Settings</string>
-    <color name="bg">#4682B4</color>
+    <color name="bg">#1E90FF</color>
+    <color name="btbg">#AFEEEE</color>
 </resources>

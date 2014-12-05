@@ -1,12 +1,13 @@
 package com.example.inucampusmap;
 
 import java.util.ArrayList;
+
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -49,9 +50,9 @@ public class StarActivity extends Activity
 		mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));
 
 		map_info_list = new ArrayList<MapBean>();   
-		map_info_list.add(new MapBean("37.37478,126.63442","촬영장 1",(R.drawable.rlatngus)));//학산도서관
-		map_info_list.add(new MapBean("37.37449,126.63349","촬영장 2",(R.drawable.classroom1)));//정보기술대
-		map_info_list.add(new MapBean("37.37426,126.63071","촬영장 3",(R.drawable.cjsthddl)));//복지회관
+		map_info_list.add(new MapBean("37.37478,126.63442","촬영장 1 학산도서관",(R.drawable.rlatngus)));//학산도서관
+		map_info_list.add(new MapBean("37.37449,126.63349","촬영장 2 정보기술대",(R.drawable.classroom1)));//정보기술대
+		map_info_list.add(new MapBean("37.37426,126.63071","촬영장 3 복지회관",(R.drawable.cjsthddl)));//복지회관
 
 		for (int i = 0; i < map_info_list.size(); i++) 
 		{
@@ -74,14 +75,15 @@ public class StarActivity extends Activity
 						//각각 Diaglog창을 다르게 해주기 위해서 .
 						if(i==0)
 						{
-							//img=R.drawable.rlatngus1;
+							img = map_info_list.get(i).getPlace_img();
 							AlertDialog.Builder builder = new AlertDialog.Builder(StarActivity.this);
-							builder.setIcon(R.drawable.rlatngus1).setPositiveButton("학산 도서관 뒤 쪽", new OnClickListener(){
+							builder.setIcon(img).setTitle(dialogtitle).setPositiveButton
+							(map_info_list.get(i).getPlace_name(), new OnClickListener(){
 								public void onClick(DialogInterface dialog,int which)
 								{
 									dialog.dismiss();
 								}
-							}).show();;
+							}).show();
 						}
 						else if(i==1)
 						{
@@ -92,20 +94,22 @@ public class StarActivity extends Activity
 								public void onClick(DialogInterface dialog,int which)
 								{
 									dialog.dismiss();
+									startActivity(new Intent(StarActivity.this,BuildingInfoActivity0.class));
 								}
 							}).show();
 
 						}
 						else
 						{
-							//img=R.drawable.wjswlgus1;
+							img = map_info_list.get(i).getPlace_img();
 							AlertDialog.Builder builder = new AlertDialog.Builder(StarActivity.this);
-							builder.setIcon(R.drawable.wjswlgus1).setPositiveButton("복지회관", new OnClickListener(){
+							builder.setIcon(img).setTitle(dialogtitle).setPositiveButton
+							(map_info_list.get(i).getPlace_name(), new OnClickListener(){
 								public void onClick(DialogInterface dialog,int which)
 								{
 									dialog.dismiss();
 								}
-							}).show();;
+							}).show();
 						}
 					}
 
