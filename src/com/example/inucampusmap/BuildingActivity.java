@@ -1,27 +1,35 @@
 package com.example.inucampusmap;
 
-import java.util.*;
+import java.util.ArrayList;
 
-import android.*;
-import android.app.*;
-import android.content.*;
-import android.os.*;
-import android.view.*;
-import android.widget.*;
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class BuildingActivity extends Activity {
 	ListView mListMember;
 	ArrayList<String> mBuildingArray;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+        BuildingActivity.setBackgroundColor(Color.BLUE);
         //activity_building.xml의 레이아웃으로 화면을 설정
         setContentView(R.layout.activity_building);
         initListView();
     }
 
-    //화면 구성 
+    private static void setBackgroundColor(int blue) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	//화면 구성 
 	public void initListView(){
 		//리스트에 추가 할 목록들
 		String[] strTextList = {"7호관 정보기술대학", "복지회관"};
