@@ -46,6 +46,10 @@
             android:name=".BuildingActivity"></activity>
         <activity
             android:name=".BuildingInfoActivity0"></activity>
+        <activity
+            android:name=".BuildingInfoActivity7"></activity>
+        <activity
+            android:name=".BuildingInfoActivity8"></activity>
         
         <activity
             android:name=".MapActivity"></activity>
@@ -60,6 +64,8 @@
             android:name=".UseInfoActivityImage"></activity>
         <activity
             android:name=".UseInfoActivity0"></activity>
+        <activity
+            android:name=".SplashActivity"></activity>
     </application>
 
 </manifest>

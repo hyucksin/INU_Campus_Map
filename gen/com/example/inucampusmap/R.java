@@ -492,9 +492,10 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020071;
         public static final int rlatngus=0x7f020072;
         public static final int rlatngus1=0x7f020073;
-        public static final int star_main=0x7f020074;
-        public static final int wjswlgus=0x7f020075;
-        public static final int wjswlgus1=0x7f020076;
+        public static final int splash_main=0x7f020074;
+        public static final int star_main=0x7f020075;
+        public static final int wjswlgus=0x7f020076;
+        public static final int wjswlgus1=0x7f020077;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f0a0020;
@@ -549,9 +550,10 @@ containing a value of this type.
         public static final int activity_building_mapshow=0x7f030002;
         public static final int activity_campus_map=0x7f030003;
         public static final int activity_main=0x7f030004;
-        public static final int activity_star_map=0x7f030005;
-        public static final int activity_useinfo=0x7f030006;
-        public static final int activity_useinfo_info0=0x7f030007;
+        public static final int activity_splash=0x7f030005;
+        public static final int activity_star_map=0x7f030006;
+        public static final int activity_useinfo=0x7f030007;
+        public static final int activity_useinfo_info0=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f090000;

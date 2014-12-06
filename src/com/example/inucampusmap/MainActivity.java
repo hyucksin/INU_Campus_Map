@@ -12,8 +12,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//상단 타이틀 삭제
         setContentView(R.layout.activity_main);
-
+        startActivity(new Intent(this, SplashActivity.class));//splashActivity 호출
     }
 
 
