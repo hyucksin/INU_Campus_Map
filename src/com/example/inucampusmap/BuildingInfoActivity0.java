@@ -31,8 +31,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class BuildingInfoActivity0 extends Activity{
 	GoogleMap mMap;
 	Marker marker;
-	LatLng loc = new LatLng(37.37556, 126.63279); // 위치 좌표 설정 
-	CameraPosition cp = new CameraPosition.Builder().target((loc)).zoom(17).build();    
+	LatLng loc ; // 위치 좌표 설정 
+	CameraPosition cp;    
 
 	ImageView mImageView;
 	Bitmap bitmap = null;
@@ -78,12 +78,7 @@ public class BuildingInfoActivity0 extends Activity{
 		Resources res;
 		Bitmap bitmap;
 		switch(v.getId()){
-		case R.id.locationButton :      		
-			/*res = getResources();
-    		bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.b7_1);
-        	bitmap = Bitmap.createScaledBitmap(bitmap, 450, 600, true);
-        	mImageView.setImageBitmap(bitmap);
-            mImageView.setScaleType(ImageView.ScaleType.FIT_START);*/
+		case R.id.locationButton :
 		
 			setContentView(R.layout.activity_building_mapshow);
 			mMap=((MapFragment)getFragmentManager().findFragmentById(R.id.campus_mapshow)).getMap();

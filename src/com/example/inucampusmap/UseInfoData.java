@@ -7,7 +7,7 @@ public class UseInfoData
 	private String place_name;
 	private int place_img;
 
-	public UseInfoData(String place_location_get,String place_name_get,int place_img_get) {
+	public UseInfoData(String place_location_get,String place_name_get) {
 		
 		String[] loc_string = place_location_get.split(",");
 		double[] loc_array = new double[2];
@@ -18,7 +18,6 @@ public class UseInfoData
 
 		place_location = new LatLng(loc_array[0], loc_array[1]);
 		place_name = place_name_get;
-		place_img = place_img_get;
 
 	}
 
@@ -28,9 +27,5 @@ public class UseInfoData
 
 	public String getPlace_name() {
 		return place_name;
-	}
-
-	public int getPlace_img() {
-		return place_img;
 	}
 }
