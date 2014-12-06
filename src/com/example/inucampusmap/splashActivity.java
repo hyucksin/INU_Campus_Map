@@ -20,3 +20,4 @@ public class SplashActivity extends Activity {
         handler.sendEmptyMessageDelayed(0, 2000);//2초
     }
 }
+

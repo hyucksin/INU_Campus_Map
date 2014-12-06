@@ -5,16 +5,16 @@
     <string name="buildingButton">건물선택</string>
     <string name="buildingImageView">건물이미지뷰</string>
     <string name="mapButton">캠퍼스지도</string>
-    <string name="starButton">별그대강의실</string>
-    <string name="useButton">이용정보</string>
+    <string name="starButton">별그대촬영장</string>
+    <string name="useButton">교내이용정보</string>
     <string name="useInfoImageView">정보이미지뷰</string>
     <string name="useInfoMapImage">맵이미지뷰</string>
-    <string name="floorMapButton">층별 구조도 보기</string>
-    <string name="floorRoomButton">층별 방 목록 보기</string>
+    <string name="floorMapButton">층별 구조도</string>
+    <string name="floorRoomButton">층별 방 목록</string>
     <string name="textRoomList">층별 방 목록 텍스트</string>
     <string name="f3Button">3층</string>
     <string name="locationButton">건물의 위치</string>
     <string name="action_settings">Settings</string>
-    <color name="bg">#1E90FF</color>
+    <color name="bg">#82CAFA</color>
     <color name="btbg">#AFEEEE</color>
 </resources>

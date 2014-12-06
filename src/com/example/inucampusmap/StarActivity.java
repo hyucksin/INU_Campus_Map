@@ -93,8 +93,8 @@ public class StarActivity extends Activity
 							("상세정보", new OnClickListener(){
 								public void onClick(DialogInterface dialog,int which)
 								{
-									dialog.dismiss();
-									startActivity(new Intent(StarActivity.this,BuildingInfoActivity0.class));
+									//dialog.dismiss();
+									startActivity(new Intent(StarActivity.this,BuildingInfoActivity7.class));
 								}
 							}).show();
 
