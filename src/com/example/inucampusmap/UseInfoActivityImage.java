@@ -1,6 +1,7 @@
 package com.example.inucampusmap;
 
 import java.util.*;
+
 import android.app.*;
 import android.content.*;
 import android.graphics.*;
@@ -15,6 +16,7 @@ public class UseInfoActivityImage extends Activity{
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_useinfo_info0);
         InfoView infoView = new InfoView(this, infoNumber);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//상단 타이틀 삭제
         setContentView(infoView);
     }
 }

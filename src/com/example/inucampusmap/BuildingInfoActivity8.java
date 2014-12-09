@@ -12,6 +12,7 @@ import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -54,14 +55,15 @@ public class BuildingInfoActivity8 extends Activity{
 	final int R_THREE = 7;
 	final int R_FOUR = 8;
 	final int R_FIVE = 9;
-	
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);//상단 타이틀 삭제
 		setContentView(R.layout.activity_building_info0);
-		
-		
+
+
 		textView = (TextView)findViewById(R.id.textRoomList);
 
 		Button mapButton = (Button)findViewById(R.id.floorMapButton);
@@ -81,12 +83,12 @@ public class BuildingInfoActivity8 extends Activity{
 		case R.id.locationButton :
 			setContentView(R.layout.activity_building_mapshow);
 			bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.b8);
-        	bitmap = Bitmap.createScaledBitmap(bitmap, 450, 300, true);
-        	mImageView = (ImageView)findViewById(R.id.buildingImageView);
-        	mImageView.setImageBitmap(bitmap);
-            mImageView.setScaleType(ImageView.ScaleType.FIT_START);
+			bitmap = Bitmap.createScaledBitmap(bitmap, 450, 300, true);
+			mImageView = (ImageView)findViewById(R.id.buildingImageView);
+			mImageView.setImageBitmap(bitmap);
+			mImageView.setScaleType(ImageView.ScaleType.FIT_START);
 			loc = new LatLng(37.373645, 126.632594);
-          	cp = new CameraPosition.Builder().target((loc)).zoom(17).build();
+			cp = new CameraPosition.Builder().target((loc)).zoom(17).build();
 			mMap=((MapFragment)getFragmentManager().findFragmentById(R.id.campus_mapshow)).getMap();
 			mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cp));   
 			marker = mMap.addMarker(new MarkerOptions().position(loc));

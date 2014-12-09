@@ -22,6 +22,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+//건물의 위치 정보를 눌르게 되면, 동시에 Map을 보여주게 하는 Class//
 public class ShowLocation extends Activity
 {
 

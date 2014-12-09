@@ -690,11 +690,13 @@ containing a value of this type.
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -713,6 +715,8 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f040006;
+        public static final int CustomTitle=0x7f040007;
+        public static final int CustomWindowTitleBackground=0x7f040008;
         public static final int Theme_IAPTheme=0x7f040000;
         public static final int WalletFragmentDefaultButtonTextAppearance=0x7f040003;
         public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f040002;

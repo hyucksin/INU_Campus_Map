@@ -1,6 +1,7 @@
 package com.example.inucampusmap;
 import com.google.android.gms.maps.model.LatLng;
 
+//campus 지도에 있는 건물의 정보, 건물 이미지, 위도,경도를 저장할 수 있는 Class//
 public class CampusMap
 {
 	private LatLng place_location;

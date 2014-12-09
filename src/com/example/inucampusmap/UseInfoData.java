@@ -1,6 +1,7 @@
 package com.example.inucampusmap;
 import com.google.android.gms.maps.model.LatLng;
 
+//이용정보를 저장하기 위한 Class//
 public class UseInfoData
 {
 	private LatLng place_location;

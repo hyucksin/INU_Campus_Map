@@ -288,6 +288,8 @@ int string useInfoMapImage 0x7f05002a
 int string wallet_buy_button_place_holder 0x7f050022
 int style AppBaseTheme 0x7f040005
 int style AppTheme 0x7f040006
+int style CustomTitle 0x7f040007
+int style CustomWindowTitleBackground 0x7f040008
 int style Theme_IAPTheme 0x7f040000
 int style WalletFragmentDefaultButtonTextAppearance 0x7f040003
 int style WalletFragmentDefaultDetailsHeaderTextAppearance 0x7f040002

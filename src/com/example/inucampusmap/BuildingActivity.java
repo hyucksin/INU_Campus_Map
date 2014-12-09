@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewParent;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -20,6 +22,7 @@ public class BuildingActivity extends Activity {
         super.onCreate(savedInstanceState);
         BuildingActivity.setBackgroundColor(Color.BLUE);
         //activity_building.xml의 레이아웃으로 화면을 설정
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//상단 타이틀 삭제
         setContentView(R.layout.activity_building);
         initListView();
     }

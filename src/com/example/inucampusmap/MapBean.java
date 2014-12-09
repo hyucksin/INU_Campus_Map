@@ -1,6 +1,7 @@
 package com.example.inucampusmap;
 import com.google.android.gms.maps.model.LatLng;
 
+//campus 지도에 별그대 촬영장 정보, 촬영장소 이미지, 위도,경도를 저장할 수 있는 Class//
 public class MapBean 
 {
 	private LatLng place_location;

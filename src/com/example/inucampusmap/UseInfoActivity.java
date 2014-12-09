@@ -11,17 +11,18 @@ import android.widget.*;
 public class UseInfoActivity extends Activity {
 	ListView mListMember;
 	ArrayList<String> mUseInfoArray;
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        
-        //activity_building의 레이아웃으로 화면을 설정
-        setContentView(R.layout.activity_useinfo);
-        initListView();
-    }
 
-    //화면 구성 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);//상단 타이틀 삭제
+		//activity_building의 레이아웃으로 화면을 설정
+		setContentView(R.layout.activity_useinfo);
+		initListView();
+	}
+
+	//화면 구성 
 	public void initListView(){
 		//리스트에 추가 할 목록들
 		String[] strTextList = {
@@ -51,29 +52,29 @@ public class UseInfoActivity extends Activity {
 				"주차장 관리실",
 				"피자리아(피자&파스타)",
 				"학생식당",
-				"한솥도시락"};
-		
+		"한솥도시락"};
+
 		//mBuildingArray에 목록을 추가
 		mUseInfoArray = new ArrayList<String>();
 		for(int i = 0; i < strTextList.length; i++)
 			mUseInfoArray.add(strTextList[i]);
-		
+
 		//ListView와 연동하기 위해 adapter를 이용하여 등록
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, mUseInfoArray);
 		mListMember = (ListView)findViewById(R.id.useInfoList);
 		mListMember.setAdapter(adapter);
-		
+
 		//리스너를 등록한다.
 		AdapterView.OnItemClickListener mItemClickListener = 
 				new AdapterView.OnItemClickListener() {
-					public void onItemClick(AdapterView parent, View view, int position, long id){
-						//선택한 이용정보의 액티비티 이동
-						UseInfoActivity0 a = new UseInfoActivity0();
-						a.infoNumber = position;
-						startActivity(new Intent(UseInfoActivity.this,UseInfoActivity0.class));
-					}
-				};
+			public void onItemClick(AdapterView parent, View view, int position, long id){
+				//선택한 이용정보의 액티비티 이동
+				UseInfoActivity0 a = new UseInfoActivity0();
+				a.infoNumber = position;
+				startActivity(new Intent(UseInfoActivity.this,UseInfoActivity0.class));
+			}
+		};
 		mListMember.setOnItemClickListener(mItemClickListener);
 	}
 }

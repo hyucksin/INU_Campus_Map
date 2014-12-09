@@ -12,6 +12,7 @@ import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -59,6 +60,7 @@ public class BuildingInfoActivity0 extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		 requestWindowFeature(Window.FEATURE_NO_TITLE);//상단 타이틀 삭제
 		setContentView(R.layout.activity_building_info0);
 		
 		
