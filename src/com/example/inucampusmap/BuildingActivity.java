@@ -35,7 +35,7 @@ public class BuildingActivity extends Activity {
 	//화면 구성 
 	public void initListView(){
 		//리스트에 추가 할 목록들
-		String[] strTextList = {"7호관 정보기술대학", "8호관 공과대학"};
+		String[] strTextList = {"7호관 정보기술대학", "8호관 공과대학", "11호관 복지회관"};
 		
 		//mBuildingArray에 목록을 추가
 		mBuildingArray = new ArrayList<String>();
@@ -60,6 +60,9 @@ public class BuildingActivity extends Activity {
 							break;
 							case 1 :
 								startActivity(new Intent(BuildingActivity.this,BuildingInfoActivity8.class));
+							break;
+							case 2 :
+								startActivity(new Intent(BuildingActivity.this,BuildingInfoActivity11.class));
 							break;
 						}
 					}

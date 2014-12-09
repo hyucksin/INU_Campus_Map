@@ -51,7 +51,8 @@
             android:name=".BuildingInfoActivity7"></activity>
         <activity
             android:name=".BuildingInfoActivity8"></activity>
-        
+        <activity
+            android:name=".BuildingInfoActivity11"></activity>
         <activity
             android:name=".MapActivity"></activity>
         

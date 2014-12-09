@@ -136,7 +136,7 @@ public class BuildingInfoActivity8 extends Activity{
 			mImage.setVisibility(LinearLayout.VISIBLE);
 			mText.setVisibility(LinearLayout.INVISIBLE);
 			bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.bf_8_1);
-			bitmap = Bitmap.createScaledBitmap(bitmap, 450, 600, true);
+			bitmap = Bitmap.createScaledBitmap(bitmap, 600, 600, true);
 			mImageView.setImageBitmap(bitmap);
 			mImageView.setScaleType(ImageView.ScaleType.FIT_START);
 			break;
@@ -144,7 +144,7 @@ public class BuildingInfoActivity8 extends Activity{
 			mImage.setVisibility(LinearLayout.VISIBLE);
 			mText.setVisibility(LinearLayout.INVISIBLE);
 			bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.bf_8_2);
-			bitmap = Bitmap.createScaledBitmap(bitmap, 450, 600, true);
+			bitmap = Bitmap.createScaledBitmap(bitmap, 600, 600, true);
 			mImageView.setImageBitmap(bitmap);
 			mImageView.setScaleType(ImageView.ScaleType.FIT_START);
 			break;
@@ -152,7 +152,7 @@ public class BuildingInfoActivity8 extends Activity{
 			mImage.setVisibility(LinearLayout.VISIBLE);
 			mText.setVisibility(LinearLayout.INVISIBLE);
 			bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.bf_8_3);
-			bitmap = Bitmap.createScaledBitmap(bitmap, 450, 600, true);
+			bitmap = Bitmap.createScaledBitmap(bitmap, 600, 600, true);
 			mImageView.setImageBitmap(bitmap);
 			mImageView.setScaleType(ImageView.ScaleType.FIT_START);
 			break;
@@ -160,7 +160,7 @@ public class BuildingInfoActivity8 extends Activity{
 			mImage.setVisibility(LinearLayout.VISIBLE);
 			mText.setVisibility(LinearLayout.INVISIBLE);
 			bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.bf_8_4);
-			bitmap = Bitmap.createScaledBitmap(bitmap, 450, 600, true);
+			bitmap = Bitmap.createScaledBitmap(bitmap, 600, 600, true);
 			mImageView.setImageBitmap(bitmap);
 			mImageView.setScaleType(ImageView.ScaleType.FIT_START);
 			break;
@@ -168,7 +168,7 @@ public class BuildingInfoActivity8 extends Activity{
 			mImage.setVisibility(LinearLayout.VISIBLE);
 			mText.setVisibility(LinearLayout.INVISIBLE);
 			bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.bf_8_5);
-			bitmap = Bitmap.createScaledBitmap(bitmap, 450, 600, true);
+			bitmap = Bitmap.createScaledBitmap(bitmap, 600, 600, true);
 			mImageView.setImageBitmap(bitmap);
 			mImageView.setScaleType(ImageView.ScaleType.FIT_START);
 			break;
