@@ -210,6 +210,10 @@ public class BuildingInfoActivity8 extends Activity{
 class TextRoom8 {
 	ArrayList<String> textArray;
 	TextRoom8(){
+		addRoomText();
+		}
+		
+		void addRoomText(){
 		textArray = new ArrayList<String>();
 		textArray.add("101 기계제도실\n"+
 				"102 재료 실험실\n"+
